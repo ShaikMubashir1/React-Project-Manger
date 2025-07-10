@@ -23,7 +23,7 @@ function SideBar({ onAdding, onShow, Details, onSelect, onCloseAdding }) {
               className={
                 onShow ? `bg-transparent cursor-pointer` : `bg-stone-900 p-2`
               }
-              id={task.id}
+              key={task.id}
               onClick={() => {
                 onShow();
                 onSelect(Details.indexOf(task));

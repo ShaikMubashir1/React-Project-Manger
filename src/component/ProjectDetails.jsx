@@ -68,7 +68,7 @@ function ProjectDetails({ Details, onCloseAdding, onAdding, Index }) {
       <div className=" w-full md:w-9/12 bg-stone-300 p-5">
         <form onSubmit={AddTodo}>
           {Details[Index].array.map((List) => (
-            <li className=" flex justify-between items-center " id={List.id}>
+            <li className=" flex justify-between items-center " key={List.id}>
               <p>{List.$Text}</p>
               <button
                 onClick={() => {
